@@ -10,7 +10,7 @@ class SummitBridge(Node):
         
         # 1. Connect to robot's ROS 1 via WebSockets
         self.get_logger().info("Connecting to robot...")
-        self.ros1 = roslibpy.Ros(host='192.168.0.91', port=9090) # host=<ROS1_IP>
+        self.ros1 = roslibpy.Ros(host='192.168.0.91', port=9091) # host=<ROS1_IP>
         self.ros1.run()
         
         if self.ros1.is_connected:
