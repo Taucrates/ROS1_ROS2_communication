@@ -21,8 +21,10 @@ pip install roslibpy
 ### Computer with ROS 1
 In the **ROS 1 machine** launch the following file:
 ```
-roslaunch rosbridge_server rosbridge_websocket.launch
+roslaunch rosbridge_server rosbridge_websocket.launch port:=9091
 ```
+*Note that we set the 9091 port to avoid problems with already launched instances of websocket.*
+
 ### Computer with ROS 2
 First, download the python script into the **ROS 2 machine** and change the IP of the server (IP of the ROS 1 machine) and the topics to which messages must be published/subscribed. **Read carefully the python script**.
 ```
